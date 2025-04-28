@@ -1,0 +1,353 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="navbar-container position-absolute z-2">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.webp" class="w-25" alt="" />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active-link" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#searchListings">SEARCH LISTINGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div id="home" class="jumbotron position-relative">
+    <div class="background-mask">
+        <div class="background-image position-absolute z-n1"></div>
+        <div class="container jumbotron-content">
+            <h2>DON'T JUST LIST IT.</h2>
+            <h1>GET IT SOLD!</h1>
+            <p>
+                We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting
+                you top dollar for your home.
+            </p>
+            <button type="button" class="btn btn-primary btn-lg mt-3">Contact Us!</button>
+        </div>
+    </div>
+</div>
+
+<div id="searchListings" class="page-container position-relative listings-container">
+    <h2 class="listings-heading position-absolute top-0 mt-4 text-danger">SEARCH OUR LISTINGS</h2>
+    <div class="listings-page container-fluid display-flex justify-content-center position-relative overflow-hidden">
+        <form action="#" method="post" class="listings-form p-5 border border-radius-5">
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Find your area...</option>
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Housing type...</option>
+                        </select>
+                        <label for="floatingSelect">Type</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Any number</option>
+                            <option value="1">Studio</option>
+                            <option value="2">1+</option>
+                            <option value="3">2+</option>
+                            <option value="4">3+</option>
+                            <option value="5">4+</option>
+                            <option value="6">5+</option>
+                            <option value="7">6+</option>
+                        </select>
+                        <label for="floatingSelect">Bedrooms</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Any number</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                            <option value="6">6+</option>
+                        </select>
+                        <label for="floatingSelect">Bathrooms</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput5" placeholder="0" />
+                        <label for="floatingInput5">Minimum Price</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput6" placeholder="9999" />
+                        <label for="floatingInput6">Maximum Price</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Default...</option>
+                            <option value="1">Newest</option>
+                            <option value="2">Oldest</option>
+                            <option value="3">Least expensive to most expensive</option>
+                            <option value="4">Most expensive to least expensive</option>
+                        </select>
+                        <label for="floatingSelect">Sort by</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn btn-danger btn-lg w-100">Find your dream home now!</button>
+                </div>
+            </div>
+        </form>
+        <div class="listings-mask"></div>
+        <div class="listings-carousel position-absolute w-100 z-n1">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/carousel/1.webp" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/2.webp" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/3.webp" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/4.webp" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/5.webp" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/6.webp" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/7.webp" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/8.webp" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="aboutUs" class="page-container info-container position-relative">
+    <h2 class="info-heading position-absolute">WHY CHOOSE MARCI METZGER?</h2>
+    <div class="cards">
+        <div class="myCard">
+            <img src="assets/cards/1.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Top Residential Sales Last 5 Years</h5>
+                <p class="card-text">
+                    We helped nearly 90 clients in 2021, and closed 28.5 million in sales! Our team works hard everyday
+                    to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, &
+                    we want to make sure our best is better every year.
+                </p>
+            </div>
+        </div>
+        <div class="myCard">
+            <img src="assets/cards/2.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Don't Just List it...</h5>
+                <p class="card-text">
+                    Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible
+                    buyer, getting you top dollar for your home.
+                </p>
+            </div>
+        </div>
+        <div class="myCard">
+            <img src="assets/cards/3.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Guide to Buyers</h5>
+                <p class="card-text">
+                    Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades
+                    lists, contractors on speed dial, & more!
+                </p>
+            </div>
+        </div>
+        <div class="myCard">
+            <img src="assets/cards/4.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Real Estate Done Right</h5>
+                <p class="card-text">
+                    Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your
+                    residence, looking at investment properties, or just curious about the markets, our team ensures you
+                    get the best experience possible!
+                </p>
+            </div>
+        </div>
+        <div class="myCard">
+            <img src="assets/cards/5.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Commercial & Residential</h5>
+                <p class="card-text">
+                    Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers?
+                    Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you
+                    find where to put you hard-earned dollars.
+                </p>
+            </div>
+        </div>
+        <div class="myCard">
+            <img src="assets/cards/6.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Rely on Expertise</h5>
+                <p class="card-text">
+                    If you have questions about affordability, credit, and loan options, trust us to connect you with
+                    the right people to get the answers you need in a timely fashion. We make sure you feel confident
+                    and educated every step of the way.
+                </p>
+            </div>
+        </div>
+        <div class="myCard">
+            <img src="assets/cards/7.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">It's Marci Metzger!</h5>
+                <p class="card-text">
+                    Marci was a REALTOR, then licensed Broker, in Washington State. Now, she is enjoying the sunshine,
+                    and helping clients in Southern Nevada. Having helped buyers and sellers in many markets since 1995,
+                    she is a wealth of knowledge.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contactUs" class="page-container">
+    <div class="contact-page container">
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d34472.59220870136!2d-115.96667716910966!3d36.1736613003774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x80c6398c31855555%3A0xca2c250302350734!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048%2C%20USA!3m2!1d36.1842494!2d-115.9552532!5e0!3m2!1sen!2sph!4v1745609886784!5m2!1sen!2sph"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+        <div class="contact-details">
+            <form action="#" method="post">
+                <h4 class="fs-1 p-3 text-white">Send us a message!</h4>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe" />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput2"
+                        placeholder="name@example.com"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send!</button>
+            </form>
+            <div>
+                <h4 class="fs-1 p-3 text-white">Address</h4>
+                <h5>Marci Metzger - THE RIDGE REALTY GROUP</h5>
+                <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                <h5>Office Hours</h5>
+                <p>Open daily 08:00 am - 07:00 pm</p>
+                <p>
+                    <em
+                        >Appointments outside office hours available upon request. Just call
+                        <a href="#">(206) 919-6886</a>!</em
+                    >
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="copyright-container"><p>COPYRIGHT © 2023 MARCI METZGER HOMES - ALL RIGHTS RESERVED</p></div>
+    <div class="listings-accreditations">
+        <img src="assets/accreditations/1.webp" alt="" />
+        <img src="assets/accreditations/2.webp" alt="" />
+        <img src="assets/accreditations/3.webp" alt="" />
+        <img src="assets/accreditations/4.webp" alt="" />
+    </div>
+    <div class="socials-container">
+        <h5>Contact Me</h5>
+        <div class="socials">
+            <img src="assets/icons/fb.png" alt="" />
+            <img src="assets/icons/ig.png" alt="" />
+            <img src="assets/icons/linkedin.png" alt="" />
+            <img src="assets/icons/yelp.png" alt="" />
+        </div>
+        </ul>
+    </div>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+    // Get the button:
+    let mybutton = document.getElementById('myBtn');
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = 'block';
+        } else {
+            mybutton.style.display = 'none';
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../layouts/head.ejs", {tit: "Error"}) %>
+    <body>
+        <div class="container text-center">
+            <div>
+                <img src="assets/sad-cat.jpg" alt="sad cat" />
+            </div>
+            <section>
+                <h1><%= err.statusCode %> <%= err.statusMessage %></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, corporis!</p>
+                <button type="button" class="btn btn-primary">Click here to head back!</button>
+            </section>
+        </div>
+    </body>
+</html>
